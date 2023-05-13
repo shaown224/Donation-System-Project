@@ -1,0 +1,155 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'style1.css' %}" />
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>{% block title_block %} Donation System {% endblock %}</title>
+  </head>
+  <body style="background-image: url(https://images.unsplash.com/photo-1537440499989-de5f6b6854de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+  	<div class="menu-bar">
+	  <li class="nav-item active">
+			<h1 class="logo" href="{% url 'index' %}" style="margin-bottom: 40;" >Donate & Save<span>.Lifes</span></h1>
+	  </li>
+      
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+		{% if user.is_authenticated %}
+		<li><a href="{% url 'Login_App:logout' %}">Log out</a></li>
+		<li><a href="{% url 'Login_App:profile' %}">Profile</a></li>
+		{% else %}
+		<li><a href="{% url 'Login_App:login' %}">Log in</a></li>
+		{% endif %}
+		
+        
+        </li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+	<div class="container-sm" style="padding-top: 80; width: 100%; background-color: rgba(188, 200, 208, 0.975);">
+	{% block body_block %}
+
+	
+
+	{% endblock %}
+
+	</div>
+
+    <div class="sv">
+    	<h3 class="s1" style="padding-left: 5%;">Mobilizing Youth to Build More Sustainable Development</h3>
+		<!-- <p class ="ac">We are providing the ideal training ground for tomorrow’s 
+			leaders who will take charge to create a better future for us all and achieve sustainable development goals.</p> -->
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Sponsor A Child</h3>
+    			<p class="tc">With just BDT 2000 monthly, you can give children access to quality
+					 education and enable them to change their life. Sponsor a child today!. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/sponsor.jpg' %}" alt="Italian Trulli" style="height: 270px;width: 400px">
+    		</div>
+    	</div>
+
+
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Impact</h3>
+    			<p class="tc">Together we’ve impacted the lives of over 4500 vulnerable 
+					children and 50,000 youth by providing the necessary tools to unleash their potential. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/imapct.jpg' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+
+
+    	<div class="sv1">
+    		<div class="txt1"">
+    			<h3 class="ac">Success Stories</h3>
+    			<p class="tc">In the 15 years of our fruitful journey, Donate & Save.Lifes foundation has been able to bring
+					 about positive change in the lives of many, whether it be our students or our volunteers. </p>
+    		</div>
+    		<div class="img1" style="margin-right: 5%;"> 
+    			<img src="{% static 'img/success.jpg' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+
+    <div class="footer">
+   	   		<div class="f1">
+   	   			<div class="fh1">
+   	   				<h1 style="line-height: 3; margin-left: 22%; font-family: arial;font-size:35px; font-weight: bold;">BachelorPoint</h1>
+   	   			</div>
+   	   			<div class="fc1">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Accomodation</h3>
+   	   			</div>
+   	   			<div class="fc2">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Meal</h3>
+   	   			</div><div class="fc3">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Maid</h3>
+   	   			</div>
+   	   			<div class="fc4">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Wifi</h3>
+   	   			</div>
+   	   			
+   	   			
+   	   		</div>
+   	   		<div class="f2">
+   	   			<div class="fh2">
+   	   				<h1 style="line-height: 3; font-family: arial;font-size:35px; font-weight: bold;">Terms&Conditions</h1>
+   	   			</div>
+   	   			<div class="fc5">
+   	   				<h3 style="margin-left: 20%; line-height: 2;">Privacy Policy</h3>
+   	   			</div>
+   	   			<div class="fc6">
+   	   				<h3 style="margin-left: 20%; line-height: 2;">Copyright Policy</h3>
+   	   			</div><div class="fc7">
+   	   				<h3 style="margin-left: 20%; line-height: 2;">Code Of Conduct</h3>
+   	   			</div><div class="fc8">
+   	   				<h3 style="margin-left: 20%; line-height: 2;">Fees & Charges</h3>
+   	   			</div>
+   	   		</div>
+
+   	   		<div class="f3">
+   	   			<div class="fh3">
+   	   				<h1 style="line-height: 3; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">About</h1>
+   	   			</div>
+   	   			<div class="fc9">
+   	   				<h3 style="margin-left: 35%; line-height: 2;">About Us</h3>
+   	   			</div>
+   	   			<div class="fc10">
+   	   				<h3 style="margin-left: 35%; line-height: 2;">How it works</h3>
+   	   			</div><div class="fc11">
+   	   				<h3 style="margin-left: 35%; line-height: 2;">Security</h3>
+   	   			</div>
+   	   			<div class="fc12">
+   	   			  <h3 style="margin-left: 35%; line-height: 2;">Stories</h3>
+   	   			</div>
+   	   		</div>
+   	   		<div class="f4">
+   	   			<div class="fh4">
+   	   				<h1 style="line-height: 2; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">Follow On</h1>
+   	   			</div>
+   	   			<div class="simage">
+   	   				<img src="{% static 'img/fb.png' %}" style="margin-left: 35%">
+   	   				<img src="{% static 'img/twitter.png' %}">
+   	   				<img src="{% static 'img/google.png' %}">
+   	   			</div>
+   	   		</div>
+
+   	   	</div> 
+  </body>
+</html>

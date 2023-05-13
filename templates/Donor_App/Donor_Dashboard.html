@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_block %} Home {% endblock %}
+{% block body_block %}
+
+<div class="hero">
+    <h1 class="typewriter">Donate and Helping Poor Childrens </h1><br>
+    <!-- <h6 class="par3" style="color: white">In our city bachelor faces various problem.From finding the house to find a maid they faces problem</h6><br>																								
+    <h6 class="par4" style="color: white">To resolve this issues we create a platform for the bachelors.</h6> -->
+    <button class="button-75" role="button"><a href="{% url 'Login_App:login' %}"><span class="text">Donate Here</span></a></button>
+</div>
+
+{% endblock %}
