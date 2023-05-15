@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title_block %} Donate Form {% endblock %}
+{% block body_block %}
+<h2>Fill the Donate Form:</h2>
+<form method="POST">
+    {{form | crispy}}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-lg" style="margin-left: 45%;margin-bottom: 2%;">Donate</button>
+</form>
+
+{% endblock %}
