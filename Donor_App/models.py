@@ -11,5 +11,5 @@ class Donations_Details(models.Model):
     Notes = models.TextField(verbose_name="Say something")
     Time = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
+    def Donator_name(self):
         return self.Name

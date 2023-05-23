@@ -26,7 +26,7 @@
       <ul>
         <li><a href="{% url 'Organization_App:Organization_home' %}">Home</a></li>
 		<li><a href="{% url 'Organization_App:donation_list' %}">Donations List</a></li>
-		<li><a href="">Report Generate</a></li>
+		<li><a href="{% url 'Organization_App:report_home' %}">Report Generate</a></li>
 		
         
         </li>
@@ -82,68 +82,61 @@
     	</div>
 
 
-    <div class="footer">
-   	   		<div class="f1">
-   	   			<div class="fh1">
-   	   				<h1 style="line-height: 3; margin-left: 22%; font-family: arial;font-size:35px; font-weight: bold;">BachelorPoint</h1>
-   	   			</div>
-   	   			<div class="fc1">
-   	   				<h3 style="margin-left: 25%; line-height: 2;">Accomodation</h3>
-   	   			</div>
-   	   			<div class="fc2">
-   	   				<h3 style="margin-left: 25%; line-height: 2;">Meal</h3>
-   	   			</div><div class="fc3">
-   	   				<h3 style="margin-left: 25%; line-height: 2;">Maid</h3>
-   	   			</div>
-   	   			<div class="fc4">
-   	   				<h3 style="margin-left: 25%; line-height: 2;">Wifi</h3>
-   	   			</div>
-   	   			
-   	   			
-   	   		</div>
-   	   		<div class="f2">
-   	   			<div class="fh2">
-   	   				<h1 style="line-height: 3; font-family: arial;font-size:35px; font-weight: bold;">Terms&Conditions</h1>
-   	   			</div>
-   	   			<div class="fc5">
-   	   				<h3 style="margin-left: 20%; line-height: 2;">Privacy Policy</h3>
-   	   			</div>
-   	   			<div class="fc6">
-   	   				<h3 style="margin-left: 20%; line-height: 2;">Copyright Policy</h3>
-   	   			</div><div class="fc7">
-   	   				<h3 style="margin-left: 20%; line-height: 2;">Code Of Conduct</h3>
-   	   			</div><div class="fc8">
-   	   				<h3 style="margin-left: 20%; line-height: 2;">Fees & Charges</h3>
-   	   			</div>
-   	   		</div>
+    
+		<div class="footer">
+			<div class="f1">
+				<div class="fh1">
+					<h1 style="line-height: 3; margin-left: 22%; font-family: arial;font-size:35px; font-weight: bold;">Donate & Save Lifes</h1>
+				</div>
+				<div class="fc1">
+					<h3 style="margin-left: 25%; line-height: 2;">Sponsor A Child</h3>
+				</div>
+				<div class="fc2">
+					<h3 style="margin-left: 25%; line-height: 2;">News & Articles</h3>
+				</div>
+				
+				
+			</div>
+			<div class="f2">
+				<div class="fh2">
+					<h1 style="line-height: 3; font-family: arial;font-size:35px; font-weight: bold;">Terms&Conditions</h1>
+				</div>
+				<div class="fc5">
+					<h3 style="margin-left: 20%; line-height: 2;">Privacy Policy</h3>
+				</div>
+				<div class="fc6">
+					<h3 style="margin-left: 20%; line-height: 2;">Copyright Policy</h3>
+				</div><div class="fc7">
+					<h3 style="margin-left: 20%; line-height: 2;">Code Of Conduct</h3>
+				</div>
+		  
+			</div>
 
-   	   		<div class="f3">
-   	   			<div class="fh3">
-   	   				<h1 style="line-height: 3; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">About</h1>
-   	   			</div>
-   	   			<div class="fc9">
-   	   				<h3 style="margin-left: 35%; line-height: 2;">About Us</h3>
-   	   			</div>
-   	   			<div class="fc10">
-   	   				<h3 style="margin-left: 35%; line-height: 2;">How it works</h3>
-   	   			</div><div class="fc11">
-   	   				<h3 style="margin-left: 35%; line-height: 2;">Security</h3>
-   	   			</div>
-   	   			<div class="fc12">
-   	   			  <h3 style="margin-left: 35%; line-height: 2;">Stories</h3>
-   	   			</div>
-   	   		</div>
-   	   		<div class="f4">
-   	   			<div class="fh4">
-   	   				<h1 style="line-height: 2; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">Follow On</h1>
-   	   			</div>
-   	   			<div class="simage">
-   	   				<img src="{% static 'img/fb.png' %}" style="margin-left: 35%">
-   	   				<img src="{% static 'img/twitter.png' %}">
-   	   				<img src="{% static 'img/google.png' %}">
-   	   			</div>
-   	   		</div>
+			<div class="f3">
+				<div class="fh3">
+					<h1 style="line-height: 3; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">About</h1>
+				</div>
+				<div class="fc9">
+					<h3 style="margin-left: 35%; line-height: 2;">About Us</h3>
+				</div>
+				<div class="fc11">
+					<h3 style="margin-left: 35%; line-height: 2;">Security</h3>
+				</div>
+				<div class="fc12">
+				  <h3 style="margin-left: 35%; line-height: 2;">Success Stories</h3>
+				</div>
+			</div>
+			<div class="f4">
+				<div class="fh4">
+					<h1 style="line-height: 2; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">Follow On</h1>
+				</div>
+				<div class="simage">
+					<img src="{% static 'img/fb.png' %}" style="margin-left: 35%">
+					<img src="{% static 'img/twitter.png' %}">
+					<img src="{% static 'img/google.png' %}">
+				</div>
+			</div>
 
-   	   	</div> 
+		</div> 
   </body>
 </html>

@@ -22,3 +22,12 @@ def Donation_list(request):
 def Details_Donations(request, id):
     obj = get_object_or_404(Donations_Details, pk=id)
     return render(request, 'Organization_App/Detail_of_Donation.html', {'obj': obj})
+
+
+def Report_home(request):
+    return render(request, 'Organization_App/Reports_Generate_home.html', context={})
+
+
+def Donated_by_month(request):
+    obj = Donations_Details.objects.all()
+    return render(request, 'Organization_App/Donated_by_month.html', {'obj': obj})
